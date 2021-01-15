@@ -1,0 +1,27 @@
+body {
+  background-color: pink;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+}
+.pig-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: left;
+  text-align: center;
+}
+#word {
+    padding: 10px 185px;
+    font-size: 16px;
+}
+#submit {
+  padding: 10px 15px;
+  font-size: 17px;
+  background-color: green;
+  color: white
+}
+#translated-list {
+    font-weight: bolder;
+    color: white;
+}

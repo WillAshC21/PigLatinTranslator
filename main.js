@@ -1,6 +1,8 @@
+let tran = "";
+let ar =  [];
 function translate() {
-    let name = "Hello Thursday";
-    let tran = "";
+    let word = document.getElementById('word').value;
+    let name = word;
     let translator  = "";
     const latin = "ay";
     let characters = [];
@@ -12,6 +14,11 @@ function translate() {
     characters.push(total);
     }
     tran = characters.join(' ');
-    return tran;
+    let totalOne = tran.charAt(0).toUpperCase();
+    let totalStr = tran.charAt(0).toUpperCase() + tran.substring(1, tran.length).toLowerCase();
+    ar.push(totalStr);
+    document.getElementById('translated-list').innerText = ar.join('\n ');
+
 }
-translate();
+
+document.getElementById('submit').addEventListener("click", translate);
